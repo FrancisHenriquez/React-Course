@@ -1,0 +1,20 @@
+const persona = {
+    nombre: 'Tony',
+    edad: ' 45',
+    clave: 'Iroman'
+};
+
+// const { nombre } = persona;
+// console.log(nombre)
+// const {edad, clave, nombre} = persona;
+
+const retornaPersona = ({nombre, edad, clave})=>{
+   
+    return{
+        nombreClave: clave,
+        anios:edad
+    }
+
+}
+const avenger = retornaPersona (persona);
+console.log(avenger)
